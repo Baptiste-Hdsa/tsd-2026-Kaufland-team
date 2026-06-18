@@ -1,4 +1,4 @@
-package com.votre.entite;
+package com.tsd2026.kaufland;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
