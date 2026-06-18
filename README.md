@@ -11,4 +11,4 @@ Application URL :
 The goal of this project is to design and execute manual  and automated  tests for  the selected web application.
 
 ## Tools planned
-Git, ...
+Git, VSCode
