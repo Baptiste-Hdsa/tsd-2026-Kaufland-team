@@ -1,323 +1,132 @@
 {
-  "id": "3e30eafa-7347-4385-9a3a-1bdb6cd5fb92",
+  "id": "784a588d-f8a5-4867-a75c-277efc5aea38",
   "version": "2.0",
-  "name": "lab4-selenium",
+  "name": "lab4-selenium-tests",
   "url": "http://localhost:8584",
   "tests": [{
-    "id": "02f8baf7-addd-44c4-8f85-fb685b14ebcb",
-    "name": "test1_new_account",
+    "id": "3965d547-e1b5-40f0-911c-0eeffa9cf0d0",
+    "name": "test1",
     "commands": [{
-      "id": "36be32bd-cb16-44ef-bcd4-a69da0d32092",
+      "id": "a748a473-491e-4c2d-8180-0667383f5c66",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "3a6c8a93-da5a-4251-841f-c674ad84fe55",
+      "id": "4a8d93b4-93d3-40b8-8c0a-fd368bb3e811",
       "comment": "",
       "command": "setWindowSize",
-      "target": "654x751",
+      "target": "723x776",
       "targets": [],
       "value": ""
     }, {
-      "id": "4de8d19a-7047-4240-a842-e8496d9f3344",
+      "id": "12dae697-fd2c-4fe5-9457-b5523874f257",
       "comment": "",
       "command": "click",
-      "target": "css=.hero",
+      "target": "css=.mb-8",
       "targets": [
-        ["css=.hero", "css:finder"],
-        ["xpath=//main/div/main/div", "xpath:position"]
+        ["css=.mb-8", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "66d17259-c53b-433f-afa4-f7702e178ee9",
+      "id": "09f6cf40-d7ee-4020-aa61-e4332907edb1",
       "comment": "",
       "command": "click",
-      "target": "linkText=Create Account",
+      "target": "css=.mb-8",
       "targets": [
-        ["linkText=Create Account", "linkText"],
-        ["css=.btn-lg:nth-child(1)", "css:finder"],
-        ["xpath=//a[contains(text(),'Create Account')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
-        ["xpath=//div/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Create Account')]", "xpath:innerText"]
+        ["css=.mb-8", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "5eb37cfc-07e7-4de8-9715-42da8f169997",
+      "id": "46821687-8147-421b-af3e-bb2c575e1aea",
       "comment": "",
       "command": "click",
-      "target": "css=.flex:nth-child(2) > .input",
+      "target": "css=.mb-8",
       "targets": [
-        ["css=.flex:nth-child(2) > .input", "css:finder"],
-        ["xpath=//input[@type='text']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
+        ["css=.mb-8", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "b50f187d-b378-4ad8-b2ab-ffba6e895ce9",
-      "comment": "",
-      "command": "type",
-      "target": "css=.flex:nth-child(2) > .input",
-      "targets": [
-        ["css=.flex:nth-child(2) > .input", "css:finder"],
-        ["xpath=//input[@type='text']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "pbutnaru"
-    }, {
-      "id": "36760612-2cf8-431c-bd97-8fb70943d86e",
+      "id": "150504fe-4ab9-4d2f-9652-942b8e922862",
       "comment": "",
       "command": "click",
-      "target": "css=.flex:nth-child(3) > .input",
+      "target": "css=.text-4xl",
       "targets": [
-        ["css=.flex:nth-child(3) > .input", "css:finder"],
-        ["xpath=//input[@type='password']", "xpath:attributes"],
-        ["xpath=//div[2]/input", "xpath:position"]
+        ["css=.text-4xl", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Data. Your Chat.')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "0d845b91-cb76-493b-988f-d2935924a386",
-      "comment": "",
-      "command": "type",
-      "target": "css=.flex:nth-child(3) > .input",
-      "targets": [
-        ["css=.flex:nth-child(3) > .input", "css:finder"],
-        ["xpath=//input[@type='password']", "xpath:attributes"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": "Butnaru123"
-    }, {
-      "id": "80c33d4e-b52e-4358-a1fe-9b8cb9cab512",
+      "id": "b7b601cf-7a32-41ee-9d7d-1dc11dbd101f",
       "comment": "",
       "command": "click",
-      "target": "css=.flex:nth-child(3)",
+      "target": "css=.mb-8",
       "targets": [
-        ["css=.flex:nth-child(3)", "css:finder"],
-        ["xpath=//form/div[2]", "xpath:position"]
+        ["css=.mb-8", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "e1cd1dc6-9cf0-4a0e-b26b-48217065849b",
+      "id": "4a29298c-7a64-4a9a-a8a5-2eeeda5a9014",
       "comment": "",
       "command": "click",
-      "target": "css=.flex:nth-child(3) > .input",
+      "target": "linkText=Login to Instance",
       "targets": [
-        ["css=.flex:nth-child(3) > .input", "css:finder"],
-        ["xpath=//input[@type='password']", "xpath:attributes"],
-        ["xpath=//div[2]/input", "xpath:position"]
+        ["linkText=Login to Instance", "linkText"],
+        ["css=.btn-outline", "css:finder"],
+        ["xpath=//a[contains(text(),'Login to Instance')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login to Instance')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "b9724445-b2a7-47c3-98b5-84348a192f98",
+      "id": "d80b5bfe-77f6-41b4-82a7-10513335bb19",
       "comment": "",
       "command": "click",
-      "target": "css=.flex:nth-child(3) > .input",
+      "target": "linkText=VaultChat",
       "targets": [
-        ["css=.flex:nth-child(3) > .input", "css:finder"],
-        ["xpath=//input[@type='password']", "xpath:attributes"],
-        ["xpath=//div[2]/input", "xpath:position"]
+        ["linkText=VaultChat", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'VaultChat')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'VaultChat')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "2938fcd9-8e5d-4ccb-9033-87c857a525d4",
-      "comment": "",
-      "command": "doubleClick",
-      "target": "css=.flex:nth-child(3) > .input",
-      "targets": [
-        ["css=.flex:nth-child(3) > .input", "css:finder"],
-        ["xpath=//input[@type='password']", "xpath:attributes"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "77c9bff7-f757-4f00-8e72-5d5aa81d1228",
-      "comment": "",
-      "command": "type",
-      "target": "css=.flex:nth-child(3) > .input",
-      "targets": [
-        ["css=.flex:nth-child(3) > .input", "css:finder"],
-        ["xpath=//input[@type='password']", "xpath:attributes"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": "Butnaru123456789"
-    }, {
-      "id": "40531b52-560c-4c02-8ad3-b033ad6d32e0",
+      "id": "76df4e53-02b8-430f-96ad-c4d3cb219ebf",
       "comment": "",
       "command": "click",
-      "target": "css=.flex:nth-child(4) > .input",
+      "target": "css=.card:nth-child(1) .card-title",
       "targets": [
-        ["css=.flex:nth-child(4) > .input", "css:finder"],
-        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
-        ["xpath=//div[3]/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "a7818553-6a85-49cd-9937-0c6e8bd3c664",
-      "comment": "",
-      "command": "type",
-      "target": "css=.flex:nth-child(4) > .input",
-      "targets": [
-        ["css=.flex:nth-child(4) > .input", "css:finder"],
-        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
-        ["xpath=//div[3]/input", "xpath:position"]
-      ],
-      "value": "Butnaru123456789"
-    }, {
-      "id": "4683fd58-608f-4308-971e-6935b3458125",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn-success",
-      "targets": [
-        ["css=.btn-success", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//form/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "142b07c9-d409-44e2-a406-61048adb8201",
-      "comment": "",
-      "command": "type",
-      "target": "css=.input:nth-child(2)",
-      "targets": [
-        ["css=.input:nth-child(2)", "css:finder"],
-        ["xpath=//input[@type='text']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "pbutnaru"
-    }, {
-      "id": "b5da588d-873d-496a-9680-febf0b042564",
-      "comment": "",
-      "command": "type",
-      "target": "css=.input:nth-child(3)",
-      "targets": [
-        ["css=.input:nth-child(3)", "css:finder"],
-        ["xpath=//input[@type='password']", "xpath:attributes"],
-        ["xpath=//input[2]", "xpath:position"]
-      ],
-      "value": "Butnaru123456789"
-    }, {
-      "id": "5b888bf8-69b6-4552-bcad-8c7ab1e6d1ba",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn-success",
-      "targets": [
-        ["css=.btn-success", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//form/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "aec82fcc-a150-4b85-9a9b-2d629f38c7fd",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.btn-success",
-      "targets": [
-        ["css=.btn-success", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//form/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "7f3a3c4b-e075-45ef-b490-3d3ef3257299",
-      "comment": "",
-      "command": "click",
-      "target": "css=.items-start",
-      "targets": [
-        ["css=.items-start", "css:finder"],
-        ["xpath=//div[2]/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f9a4e115-d859-4f94-bdc8-61c7467990ba",
-      "comment": "",
-      "command": "click",
-      "target": "css=.space-y-4",
-      "targets": [
-        ["css=.space-y-4", "css:finder"],
-        ["xpath=//main/div/main/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f5c22488-2a5b-40fb-afde-057081522e42",
-      "comment": "",
-      "command": "click",
-      "target": "css=.z-10",
-      "targets": [
-        ["css=.z-10", "css:finder"],
-        ["xpath=//header", "xpath:position"],
-        ["xpath=//header[contains(.,'pbutnaru')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "ae7b5473-e0c4-4e6f-86f2-4275e74af76c",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Go to chats",
-      "targets": [
-        ["linkText=Go to chats", "linkText"],
-        ["css=.btn-success", "css:finder"],
-        ["xpath=//a[contains(text(),'Go to chats')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/chat')]", "xpath:href"],
-        ["xpath=//div[2]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Go to chats')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "60dff0be-ab05-415b-9b2b-5bcece8ceb4e",
-      "comment": "",
-      "command": "click",
-      "target": "css=.text-base",
-      "targets": [
-        ["css=.text-base", "css:finder"],
+        ["css=.card:nth-child(1) .card-title", "css:finder"],
         ["xpath=//h2", "xpath:position"],
-        ["xpath=//h2[contains(.,'pbutnaru')]", "xpath:innerText"]
+        ["xpath=//h2[contains(.,'Zero-Leak Security')]", "xpath:innerText"]
       ],
       "value": ""
-    }]
-  }, {
-    "id": "5eb56920-200e-4592-a981-01425b67b63b",
-    "name": "test2",
-    "commands": [{
-      "id": "fe03e460-69bf-47c5-9459-87dd3077f9a3",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
-      "value": ""
     }, {
-      "id": "b3d772cb-c4b9-4ff7-9f3d-e8f6ff6b2b27",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "654x751",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b10a9062-b539-48cc-9604-08e95088f8a8",
+      "id": "0a14d8cc-f29a-4480-a84b-2d1c6b8e5223",
       "comment": "",
       "command": "click",
-      "target": "css=.flex-grow",
+      "target": "css=.btn-error",
       "targets": [
-        ["css=.flex-grow", "css:finder"],
-        ["xpath=//main/div/main", "xpath:position"]
+        ["css=.btn-error", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "d6bf00dc-1b80-45fb-92b7-b5c582754a86",
-      "comment": "",
-      "command": "click",
-      "target": "css=.gap-4:nth-child(1)",
-      "targets": [
-        ["css=.gap-4:nth-child(1)", "css:finder"],
-        ["xpath=//div[2]/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "00c95b25-c08a-4919-b6a9-f615f42120ed",
+      "id": "616eeaf2-af01-4a42-9ad2-c90b7f4c8dd8",
       "comment": "",
       "command": "click",
       "target": "linkText=VaultChat",
@@ -331,7 +140,35 @@
       ],
       "value": ""
     }, {
-      "id": "6f601602-03df-4f65-869b-42ec37e1593a",
+      "id": "3dcf9072-b2d9-43fe-82dd-5c4ba35fcd4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-circle",
+      "targets": [
+        ["css=.btn-circle", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "63230457-a73c-49a1-95cc-f28d7a28efb7",
+    "name": "test2",
+    "commands": [{
+      "id": "276441cf-9de3-47ec-92dc-c5535b424ea7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d270791-9c95-4b1b-b529-12ed6ba61d53",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "735x751",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61a5276d-1a35-4f32-9aee-7ffdf1e36a5c",
       "comment": "",
       "command": "click",
       "target": "css=.mb-8",
@@ -342,18 +179,53 @@
       ],
       "value": ""
     }, {
-      "id": "20d1c156-396c-40d3-a359-8d4b8c51ea03",
+      "id": "c8cc341d-ce62-4a77-9a3c-2fe69541d67d",
       "comment": "",
       "command": "click",
-      "target": "css=.mb-8",
+      "target": "css=.text-4xl",
       "targets": [
-        ["css=.mb-8", "css:finder"],
-        ["xpath=//p", "xpath:position"],
-        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
+        ["css=.text-4xl", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your Data. Your Chat.')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "fe811250-caba-41dd-a9cf-845ea7f3f5f5",
+      "id": "8e84c5dc-c9bc-4e6d-a557-17f1346e0f7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.flex:nth-child(2) > .btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbfd9c2d-5309-4d8b-9143-6c9adfd98b84",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input:nth-child(2)",
+      "targets": [],
+      "value": "pbutnaru"
+    }, {
+      "id": "42c9abd8-0657-45d5-8cfa-90d0f59f3f78",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input:nth-child(3)",
+      "targets": [],
+      "value": "Butnaru123456789"
+    }, {
+      "id": "e568ebe8-73ce-4322-83fb-5c0556665f84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15766aa8-6b85-4fce-bd0d-afa41edfbc4a",
       "comment": "",
       "command": "click",
       "target": "linkText=Go to chats",
@@ -367,142 +239,7 @@
       ],
       "value": ""
     }, {
-      "id": "b52903df-beeb-435a-89b5-4990e9722c63",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn-sm > svg",
-      "targets": [
-        ["css=.btn-sm > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "56f8babe-cd29-4e09-a837-3a5e3de127fe",
-      "comment": "",
-      "command": "click",
-      "target": "css=.input",
-      "targets": [
-        ["css=.input", "css:finder"],
-        ["xpath=//input[@type='text']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "58deff99-51c9-4917-a4da-d51472288102",
-      "comment": "",
-      "command": "type",
-      "target": "css=.input",
-      "targets": [
-        ["css=.input", "css:finder"],
-        ["xpath=//input[@type='text']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "andriuha"
-    }, {
-      "id": "c7a6cbfc-8c28-49a9-8eb6-2385d3e193a2",
-      "comment": "",
-      "command": "click",
-      "target": "css=.textarea",
-      "targets": [
-        ["css=.textarea", "css:finder"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "38aee900-6b9a-4f4b-afb8-3dd14a75a75b",
-      "comment": "",
-      "command": "type",
-      "target": "css=.textarea",
-      "targets": [
-        ["css=.textarea", "css:finder"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": "ahoj, Andrej!\\nako sa mas ?"
-    }, {
-      "id": "a0180978-ad8a-4239-a368-13fa24ee2ea1",
-      "comment": "",
-      "command": "click",
-      "target": "css=.btn-primary",
-      "targets": [
-        ["css=.btn-primary", "css:finder"],
-        ["xpath=//button[2]", "xpath:position"],
-        ["xpath=//button[contains(.,'Send Message')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "6bbb0f07-c300-4432-a00c-b064d3c5e9c8",
-      "comment": "",
-      "command": "click",
-      "target": "css=.input",
-      "targets": [
-        ["css=.input", "css:finder"],
-        ["xpath=//input[@type='text']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "30de41aa-6912-4a4c-8b97-f9f9d0ae589c",
-      "comment": "",
-      "command": "click",
-      "target": "css=.p-8",
-      "targets": [
-        ["css=.p-8", "css:finder"],
-        ["xpath=//main/div/main/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "9b08d398-167f-4062-bddb-35043a548aeb",
-      "comment": "",
-      "command": "click",
-      "target": "css=.p-8",
-      "targets": [
-        ["css=.p-8", "css:finder"],
-        ["xpath=//main/div/main/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "7cb26d04-1f79-4608-8f7d-47e15099cb92",
-      "comment": "",
-      "command": "click",
-      "target": "css=.size-5",
-      "targets": [
-        ["css=.size-5", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "89ecdcd5-6779-425b-aa5d-51f80de6e7ab",
-      "comment": "",
-      "command": "mouseDownAt",
-      "target": "css=.items-center > span",
-      "targets": [
-        ["css=.items-center > span", "css:finder"],
-        ["xpath=//span", "xpath:position"],
-        ["xpath=//span[contains(.,'pbutnaru')]", "xpath:innerText"]
-      ],
-      "value": "40.95001220703125,19"
-    }, {
-      "id": "1fba22f0-2dfb-4080-b185-8c9b03258b52",
-      "comment": "",
-      "command": "mouseMoveAt",
-      "target": "css=.items-center > span",
-      "targets": [
-        ["css=.items-center > span", "css:finder"],
-        ["xpath=//span", "xpath:position"],
-        ["xpath=//span[contains(.,'pbutnaru')]", "xpath:innerText"]
-      ],
-      "value": "40.95001220703125,19"
-    }, {
-      "id": "c9e5129d-191a-4f06-96ac-0d01169b85ef",
-      "comment": "",
-      "command": "mouseUpAt",
-      "target": "css=.items-center > span",
-      "targets": [
-        ["css=.items-center > span", "css:finder"],
-        ["xpath=//span", "xpath:position"],
-        ["xpath=//span[contains(.,'pbutnaru')]", "xpath:innerText"]
-      ],
-      "value": "40.95001220703125,19"
-    }, {
-      "id": "a8c8bd92-fde6-49d0-818d-192d587545db",
+      "id": "da36c0ab-f8c3-43ed-8304-0507f7f0431e",
       "comment": "",
       "command": "click",
       "target": "linkText=VaultChat",
@@ -516,7 +253,7 @@
       ],
       "value": ""
     }, {
-      "id": "cbb91b22-caf2-49c9-9741-78d8bdcac6ed",
+      "id": "feb67417-0e83-4c26-b357-2fae4c992619",
       "comment": "",
       "command": "mouseOver",
       "target": "linkText=VaultChat",
@@ -530,7 +267,7 @@
       ],
       "value": ""
     }, {
-      "id": "d72e5e17-f79f-4ccc-9f71-a0ca716f1df2",
+      "id": "b531f774-0c94-425f-9949-4fe4d281d2d2",
       "comment": "",
       "command": "mouseOut",
       "target": "linkText=VaultChat",
@@ -544,65 +281,28 @@
       ],
       "value": ""
     }, {
-      "id": "878dd81f-992b-4304-8734-786f2f48e81c",
+      "id": "3e475ef8-98d0-4be0-b561-7c032487336d",
       "comment": "",
       "command": "click",
-      "target": "css=.mb-8",
+      "target": "css=span",
       "targets": [
-        ["css=.mb-8", "css:finder"],
-        ["xpath=//p", "xpath:position"],
-        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'pbutnaru')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "56d4b2a7-416f-4c9c-8ae1-275cbd93b58d",
+      "id": "0d7b3375-33bb-4e2d-b776-9c1864fd3d1c",
       "comment": "",
       "command": "click",
-      "target": "css=.text-4xl",
+      "target": "css=.hero-content",
       "targets": [
-        ["css=.text-4xl", "css:finder"],
-        ["xpath=//h1", "xpath:position"],
-        ["xpath=//h1[contains(.,'Your Data. Your Chat.')]", "xpath:innerText"]
+        ["css=.hero-content", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "9e7afe25-8ce9-48a6-aaca-dc7b2bd9bd28",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=VaultChat",
-      "targets": [
-        ["linkText=VaultChat", "linkText"],
-        ["css=.btn-ghost:nth-child(1)", "css:finder"],
-        ["xpath=//a[contains(text(),'VaultChat')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"],
-        ["xpath=//a[contains(.,'VaultChat')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "1621b67e-74bd-4772-b3e1-667972b9864a",
-      "comment": "",
-      "command": "click",
-      "target": "css=.mb-8",
-      "targets": [
-        ["css=.mb-8", "css:finder"],
-        ["xpath=//p", "xpath:position"],
-        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "60cc2d39-58b9-4b7b-a020-4ecac7501777",
-      "comment": "",
-      "command": "click",
-      "target": "css=.mb-8",
-      "targets": [
-        ["css=.mb-8", "css:finder"],
-        ["xpath=//p", "xpath:position"],
-        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "175b809b-c1dc-4619-8abb-513f7f40b532",
+      "id": "8de092b8-7593-4407-855e-fbe14961485a",
       "comment": "",
       "command": "click",
       "target": "css=.text-4xl",
@@ -613,25 +313,23 @@
       ],
       "value": ""
     }, {
-      "id": "c1c53a3e-959f-48ea-bdfe-174b9c6eadb5",
+      "id": "092ecbce-29d1-4106-b1f4-6e9c9589b10c",
       "comment": "",
-      "command": "assertText",
-      "target": "css=.mb-8",
+      "command": "assertElementPresent",
+      "target": "css=.bg-success\\/10 > svg",
       "targets": [
-        ["css=.mb-8", "css:finder"],
-        ["xpath=//p", "xpath:position"],
-        ["xpath=//p[contains(.,'A lightning-fast, self-hosted messaging platform built with Rust. No tracking, zero external CDN calls, just pure federated communication.')]", "xpath:innerText"]
+        ["css=.bg-success\\/10 > svg", "css:finder"]
       ],
       "value": ""
     }]
   }],
   "suites": [{
-    "id": "79b889d7-b3a4-4155-97ad-0ae2cc9beb6e",
+    "id": "0ee0bd25-3359-4bf9-8478-0030eadb7b93",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["02f8baf7-addd-44c4-8f85-fb685b14ebcb"]
+    "tests": ["3965d547-e1b5-40f0-911c-0eeffa9cf0d0"]
   }],
   "urls": ["http://localhost:8584/"],
   "plugins": []
