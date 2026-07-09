@@ -1,28 +1,29 @@
-# Lab 5 - Robot Framework Automation Report
+# Lab 5 - Robot Framework Report
 
-## Selected test cases
-* **TC-001 (Executed as Test Case 1)**: Public Navigation and Unauthenticated Interaction.
-    * *Reason for automation*: High-level business flow testing public layouts and unauthenticated structural navigation links.
-* **TC-002 (Executed as Test Case 2)**: Valid User Login Flow and Chat Navigation.
-    * *Reason for automation*: Critical and repetitive functional path verifying authentication processing, credentials handling, and routing.
+## 1. Tested application
+* **Name**: VaultChat Team Messaging Application
+* **URL**: http://localhost:3000
 
-## Tool used
-* **Tool**: Robot Framework (Keyword-Driven Test Automation Framework)
-* **Libraries Used**: `SeleniumLibrary`
-* **Project File**: `automation/robot/vaultchat_tests.robot`
+## 2. Automated test cases
+| Test Case ID | Title | Type | Result |
+|---|---|---|---|
+| TC-001 | Public Navigation and Unauthenticated Interaction | Positive | Passed |
+| TC-002 | Valid User Login Flow and Chat Navigation | Positive | Passed |
 
-## Execution results
-* **Total Automated Tests**: 2
-* **Test 1 (TC-001)**: Passed successfully. Executed the public routing scenario by packing sequential actions into descriptive domain keywords.
-* **Test 2 (TC-002)**: Passed successfully. Completed the full credentials input sequence using arguments, verified post-login dashboard loading, and completed successfully without errors.
+## 3. Keywords created
+| Keyword | Purpose |
+|---|---|
+| `Open VaultChat Home Page` | Boots the browser instance and sets the standard responsive viewport. |
+| `Explore Public Instance Elements` | Handles unauthenticated structural navigation checks. |
+| `Maps To Login Section` | Handles client-side navigation to the secure login interface. |
+| `Submit Credentials` | Parameters username and password variables into explicit form input targets. |
+| `Verify Dashboard Is Accessible` | Validates DOM state progression and executes post-login element assertions. |
 
-## Assertions used
-* **Checkpoint in Test 2**: `Page Should Contain Element` targeting `css=.bg-success\/10 > svg`.
-    * *Purpose*: Inherited from Lab 4 to confirm that the success indicator badge is properly rendered on the user interface after redirection.
-    * *Rule met*: Every automated scenario includes a built-in verification keyword to ensure explicit validation of the system state.
+## 4. Test execution
+* **Command used**: `robot automation/robot/tests/vaultchat_tests.robot`
 
-## Problems found & Keyword Enhancements
-* **Keyword Synchronization**: Migrating from low-level actions to a keyword-driven structure required adding explicit wait keywords (`Wait Until Element Is Visible`). This handles asynchronous delays during local execution and prevents false-negative timing issues.
+## 5. Selenium vs Robot Framework Comparison
+Transitioning to Robot Framework made our test cases significantly easier to read because the procedural steps are encapsulated within descriptive business-readable keywords. Reusing the login sequence with parameterized input data arguments was much simpler than repeating low-level browser actions. However, identifying and debugging stable DOM locators remained a shared challenge across both technologies. For this semester project, Robot Framework is highly suitable for building our regression test suite because it naturally handles form validations, catalog interactions, and authentication workflows. Furthermore, the automatically generated HTML logs and reports provide unparalleled transparency for team collaboration without needing additional third-party dependencies.
 
-## What should remain manual
-* **Visual appearance and aesthetic checking**: Reviewing subtle styling changes, color contrasts, or layout rendering alignment requires subjective human visual judgment and cannot be handled efficiently via keyword assertions.
+## 6. Problems and notes
+* **Asynchronous Lifecycles**: Handled rendering latencies by implementing explicit synchronization checkpoints (`Wait Until Element Is Visible`) to ensure interface stability before firing event handlers.
