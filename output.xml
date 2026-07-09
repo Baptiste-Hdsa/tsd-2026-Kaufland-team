@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-07-09T16:17:19.658588" rpa="false" schemaversion="5">
+<suite id="s1" name="Vaultchat Tests" source="C:\Users\Utilisateur\tsd-2026-Kaufland-team\automation\robot\vaultchat_tests.robot">
+<test id="s1-t1" name="TC-001: Public Navigation And Unauthenticated Interaction" line="51">
+<kw name="Open VaultChat Home Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T16:17:19.996745" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2026-07-09T16:17:23.700312" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-07-09T16:17:23.700673" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-07-09T16:17:19.996506" elapsed="3.707583">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-07-09T16:17:23.704297" elapsed="0.000038"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>735</arg>
+<arg>751</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" start="2026-07-09T16:17:23.704443" elapsed="0.000028"/>
+</kw>
+<status status="FAIL" start="2026-07-09T16:17:19.995876" elapsed="3.708733">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</status>
+</kw>
+<kw name="Explore Public Instance Elements">
+<status status="NOT RUN" start="2026-07-09T16:17:23.705036" elapsed="0.000061"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T16:17:23.705497" elapsed="2.206926"/>
+</kw>
+<doc>Executes public layout clicks without authentication.</doc>
+<status status="FAIL" start="2026-07-09T16:17:19.994829" elapsed="5.918413">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</status>
+</test>
+<test id="s1-t2" name="TC-002: Valid User Login Flow And Chat Navigation" line="57">
+<kw name="Open VaultChat Home Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T16:17:25.918353" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2026-07-09T16:17:29.373345" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-07-09T16:17:29.373603" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-07-09T16:17:25.918154" elapsed="3.457814">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-07-09T16:17:29.376347" elapsed="0.000074"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>735</arg>
+<arg>751</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" start="2026-07-09T16:17:29.376658" elapsed="0.000060"/>
+</kw>
+<status status="FAIL" start="2026-07-09T16:17:25.917435" elapsed="3.459562">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</status>
+</kw>
+<kw name="Navigate To Login Section">
+<status status="NOT RUN" start="2026-07-09T16:17:29.377417" elapsed="0.000057"/>
+</kw>
+<kw name="Submit Credentials">
+<arg>${VALID_USER}</arg>
+<arg>${VALID_PWD}</arg>
+<status status="NOT RUN" start="2026-07-09T16:17:29.377793" elapsed="0.000035"/>
+</kw>
+<kw name="Verify Dashboard Is Accessible">
+<status status="NOT RUN" start="2026-07-09T16:17:29.378141" elapsed="0.000037"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T16:17:29.378562" elapsed="2.212363"/>
+</kw>
+<doc>Executes a clean automated login and verifies dashboard access.</doc>
+<status status="FAIL" start="2026-07-09T16:17:25.915583" elapsed="5.675751">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.201)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff67fc83fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff67fc84000+14980]
+	chromedriver!(No symbol) [0x7ff67f7c793d]
+	chromedriver!(No symbol) [0x7ff67f7c44ce]
+	chromedriver!(No symbol) [0x7ff67f7b4711]
+	chromedriver!(No symbol) [0x7ff67f7b657f]
+	chromedriver!(No symbol) [0x7ff67f7b4cb3]
+	chromedriver!(No symbol) [0x7ff67f7b447b]
+	chromedriver!(No symbol) [0x7ff67f7b4131]
+	chromedriver!(No symbol) [0x7ff67f7b1e01]
+	chromedriver!(No symbol) [0x7ff67f7b2562]
+	chromedriver!(No symbol) [0x7ff67f7cbbe6]
+	chromedriver!(No symbol) [0x7ff67f8701c4]
+	chromedriver!(No symbol) [0x7ff67f84a3ca]
+	chromedriver!(No symbol) [0x7ff67f86f39b]
+	chromedriver!(No symbol) [0x7ff67f81401c]
+	chromedriver!(No symbol) [0x7ff67f814f43]
+	chromedriver!GetHandleVerifier [0x7ff680267591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff680261902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff680287115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff67fca1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff67fcaa82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff67fc8d8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff67fc71447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ffb44c9e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb45687c1c+2c]
+</status>
+</test>
+<doc>Lab 5 - Keyword-Driven UI Testing for VaultChat</doc>
+<status status="FAIL" start="2026-07-09T16:17:19.660187" elapsed="11.932391"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Vaultchat Tests" id="s1" pass="0" fail="2" skip="0">Vaultchat Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
