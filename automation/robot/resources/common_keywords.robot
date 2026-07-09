@@ -3,7 +3,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${SERVER}         http://localhost:3000
-${BROWSER}        chrome
+${BROWSER}        firefox
 ${VALID_USER}     pbutnaru
 ${VALID_PWD}      Butnaru123456789
 
