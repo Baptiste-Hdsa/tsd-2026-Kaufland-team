@@ -1,14 +1,8 @@
-# TSD 2026 - Semester Testing Project
+# Robot Framework UI Automation Suite
 
-## Team
-Kaufland team
+This folder contains the keyword-driven automated UI tests for the VaultChat application.
 
-## Tested application
-Application name :
-Application URL :
-
-## Project goal
-The goal of this project is to design and execute manual  and automated  tests for  the selected web application.
-
-## Tools planned
-Git, VSCode
+## Prerequisites
+Ensure Robot Framework and SeleniumLibrary are installed:
+```bash
+pip install robotframework robotframework-seleniumlibrary

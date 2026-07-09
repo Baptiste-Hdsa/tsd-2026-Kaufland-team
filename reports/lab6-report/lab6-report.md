@@ -13,4 +13,3 @@
 
 ## 3. Project Finalization Confirmation
 * The repository structure (`automation/postman/`, `reports/`) is complete and structured for the final project submission.
-EOF
