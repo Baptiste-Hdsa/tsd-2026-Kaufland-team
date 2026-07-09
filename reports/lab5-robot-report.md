@@ -1,29 +1,30 @@
-# Lab 5 - Robot Framework Report
+Lab 5 - Robot Framework Test Report
+1. Scope & Execution Overview
 
-## 1. Tested application
-* **Name**: VaultChat Team Messaging Application
-* **URL**: http://localhost:3000
+    Framework Used: Robot Framework (Keyword-Driven Test Automation)
 
-## 2. Automated test cases
-| Test Case ID | Title | Type | Result |
-|---|---|---|---|
-| TC-001 | Public Navigation and Unauthenticated Interaction | Positive | Passed |
-| TC-002 | Valid User Login Flow and Chat Navigation | Positive | Passed |
+    Browser: Firefox targeting http://localhost:8584
 
-## 3. Keywords created
-| Keyword | Purpose |
-|---|---|
-| `Open VaultChat Home Page` | Boots the browser instance and sets the standard responsive viewport. |
-| `Explore Public Instance Elements` | Handles unauthenticated structural navigation checks. |
-| `Maps To Login Section` | Handles client-side navigation to the secure login interface. |
-| `Submit Credentials` | Parameters username and password variables into explicit form input targets. |
-| `Verify Dashboard Is Accessible` | Validates DOM state progression and executes post-login element assertions. |
+    Test Suites Location: automation/robot/tests/
 
-## 4. Test execution
-* **Command used**: `robot automation/robot/tests/vaultchat_tests.robot`
+    Results Status: PASS (2/2 automated scenarios successfully completed)
 
-## 5. Selenium vs Robot Framework Comparison
-Transitioning to Robot Framework made our test cases significantly easier to read because the procedural steps are encapsulated within descriptive business-readable keywords. Reusing the login sequence with parameterized input data arguments was much simpler than repeating low-level browser actions. However, identifying and debugging stable DOM locators remained a shared challenge across both technologies. For this semester project, Robot Framework is highly suitable for building our regression test suite because it naturally handles form validations, catalog interactions, and authentication workflows. Furthermore, the automatically generated HTML logs and reports provide unparalleled transparency for team collaboration without needing additional third-party dependencies.
+2. Executed Test Cases & Results
 
-## 6. Problems and notes
-* **Asynchronous Lifecycles**: Handled rendering latencies by implementing explicit synchronization checkpoints (`Wait Until Element Is Visible`) to ensure interface stability before firing event handlers.
+    TC-001: Public Navigation And Unauthenticated Interaction
+
+        Status: PASS
+
+        Description: Navigated public routes, verified element visibility, and interacted with homepage elements safely without pre-authentication.
+
+    TC-002: Valid User Login Flow And Chat Navigation
+
+        Status: PASS
+
+        Description: Injected valid credentials (pbutnaru), processed authentication on localhost:8584, and verified successful dashboard access and routing.
+
+3. Evidence & Deliverables Confirmation
+
+    XML Output: /home/tarapes/Bureau/Projets/slova/devtools/tsd-2026-Kaufland-team/reports/output.xml
+
+    HTML Logs & Reports: Generated successfully inside your local reports/ folder.

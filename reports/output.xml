@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.2 on linux)" generated="2026-07-09T21:38:31.996832" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/tarapes/Bureau/Projets/slova/devtools/tsd-2026-Kaufland-team/automation/robot/tests">
+<suite id="s1-s1" name="Login Tests" source="/home/tarapes/Bureau/Projets/slova/devtools/tsd-2026-Kaufland-team/automation/robot/tests/login_tests.robot">
+<test id="s1-s1-t1" name="TC-002: Valid User Login Flow And Chat Navigation" line="6">
+<kw name="Open VaultChat Home Page" owner="common_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:32.349371" level="INFO">Opening browser 'firefox' to base url 'http://localhost:8584'.</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-09T21:38:32.349057" elapsed="3.698808"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-09T21:38:36.048314" elapsed="0.004689"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>900</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-07-09T21:38:36.053366" elapsed="0.806717"/>
+</kw>
+<status status="PASS" start="2026-07-09T21:38:32.348230" elapsed="4.512108"/>
+</kw>
+<kw name="Navigate To Login Section" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>link:Login</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-07-09T21:38:36.861560" elapsed="0.096951"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:36.959060" level="INFO">Clicking link 'link:Login'.</msg>
+<arg>link:Login</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T21:38:36.958754" elapsed="0.350881"/>
+</kw>
+<status status="PASS" start="2026-07-09T21:38:36.860862" elapsed="0.448933"/>
+</kw>
+<kw name="Submit Credentials" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=form</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-07-09T21:38:37.310685" elapsed="0.020136"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:37.331715" level="INFO">Typing text 'pbutnaru' into text field 'css=.input:nth-child(2)'.</msg>
+<arg>css=.input:nth-child(2)</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T21:38:37.331167" elapsed="0.071774"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:37.403896" level="INFO">Typing text 'Butnaru123456789' into text field 'css=.input:nth-child(3)'.</msg>
+<arg>css=.input:nth-child(3)</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T21:38:37.403278" elapsed="0.030488"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:37.434293" level="INFO">Clicking button 'css=.btn-success'.</msg>
+<arg>css=.btn-success</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T21:38:37.433987" elapsed="0.271465"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<arg>${VALID_PWD}</arg>
+<status status="PASS" start="2026-07-09T21:38:37.310175" elapsed="0.395465"/>
+</kw>
+<kw name="Verify Dashboard Is Accessible" owner="common_keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T21:38:40.707050" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T21:38:37.706330" elapsed="3.001100"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Go to chats</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-07-09T21:38:40.707999" elapsed="0.011970"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:40.721429" level="INFO">Clicking link 'link:Go to chats'.</msg>
+<arg>link:Go to chats</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T21:38:40.720625" elapsed="0.261891"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T21:38:42.985091" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T21:38:40.983117" elapsed="2.002352"/>
+</kw>
+<status status="PASS" start="2026-07-09T21:38:37.705980" elapsed="5.279868"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T21:38:42.986827" elapsed="1.055666"/>
+</kw>
+<doc>Executes a clean automated login and verifies dashboard access.</doc>
+<status status="PASS" start="2026-07-09T21:38:32.347366" elapsed="11.695320"/>
+</test>
+<doc>Lab 5 - Login Acceptance Tests for VaultChat</doc>
+<status status="PASS" start="2026-07-09T21:38:32.051083" elapsed="11.992283"/>
+</suite>
+<suite id="s1-s2" name="Project Tests" source="/home/tarapes/Bureau/Projets/slova/devtools/tsd-2026-Kaufland-team/automation/robot/tests/project_tests.robot">
+<test id="s1-s2-t1" name="TC-001: Public Navigation And Unauthenticated Interaction" line="6">
+<kw name="Open VaultChat Home Page" owner="common_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:44.047475" level="INFO">Opening browser 'firefox' to base url 'http://localhost:8584'.</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-09T21:38:44.047218" elapsed="3.663335"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-09T21:38:47.710869" elapsed="0.008019"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1280</arg>
+<arg>900</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2026-07-09T21:38:47.719235" elapsed="0.794366"/>
+</kw>
+<status status="PASS" start="2026-07-09T21:38:44.046880" elapsed="4.466932"/>
+</kw>
+<kw name="Explore Public Instance Elements" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=body</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-07-09T21:38:48.514771" elapsed="0.067015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T21:38:50.582590" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T21:38:48.582011" elapsed="2.000811"/>
+</kw>
+<kw name="Run Keyword And Ignore Action" owner="common_keywords">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-07-09T21:38:50.585446" level="INFO">Clicking element 'css=.mb-8'.</msg>
+<arg>@{args}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-09T21:38:50.584964" elapsed="0.234517"/>
+</kw>
+<arg>${keyword}</arg>
+<arg>@{args}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-07-09T21:38:50.584000" elapsed="0.235888"/>
+</kw>
+<arg>Click Element</arg>
+<arg>css=.mb-8</arg>
+<status status="PASS" start="2026-07-09T21:38:50.583293" elapsed="0.236969"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-09T21:38:51.822484" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-09T21:38:50.820864" elapsed="1.002117"/>
+</kw>
+<status status="PASS" start="2026-07-09T21:38:48.514229" elapsed="3.309594"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-09T21:38:51.825065" elapsed="1.006544"/>
+</kw>
+<doc>Executes public layout clicks without authentication.</doc>
+<status status="PASS" start="2026-07-09T21:38:44.046261" elapsed="8.785505"/>
+</test>
+<doc>Lab 5 - Public Project &amp; Layout Tests for VaultChat</doc>
+<status status="PASS" start="2026-07-09T21:38:44.043981" elapsed="8.788394"/>
+</suite>
+<status status="PASS" start="2026-07-09T21:38:31.998835" elapsed="20.834662"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="Login Tests" id="s1-s1" pass="1" fail="0" skip="0">Tests.Login Tests</stat>
+<stat name="Project Tests" id="s1-s2" pass="1" fail="0" skip="0">Tests.Project Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
